@@ -1,3 +1,3 @@
-Project Quiz
+**Project Quiz**
 
 Website for making quiz

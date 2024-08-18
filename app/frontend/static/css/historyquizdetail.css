@@ -1,0 +1,33 @@
+hr {
+    overflow: visible;
+    font-size: .625rem;
+    font-weight: 400;
+    opacity: 0.95;
+    border-top-color: var(--bs-border-color-translucent);
+}
+
+hr::after {
+    background: #fff;
+    padding: 0 4px;
+    content: 'Pilihan jawaban';
+    position: relative;
+    bottom: 8px;
+    color: #6d6d6d;
+}
+
+.correct {
+    color:#59d149;
+}
+
+.correct::before {
+    font: var(--fa-font-solid);
+    padding-left: .5rem;
+    content: "\f00c";
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+.fs-875 {
+    font-size: .875rem;
+}

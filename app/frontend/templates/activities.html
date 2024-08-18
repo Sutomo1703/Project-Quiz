@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% set active_page = "activity" %}
+{% block header %}
+{% block script %}
+<!-- SWEET ALERT -->
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<!-- ANIMATE CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+<script defer src="/static/js/activity_page.js"></script>
+<link rel="stylesheet" href="/static/css/activitypage.css">
+<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+{% endblock %}
+{% endblock %}
+{% block content %}
+<div class="d-flex justify-content-center mb-3 animate__animated animate__fadeInUp animate__fast">
+    <span class=" fs-2 fw-bold">Daftar Kuis</span>
+</div>
+<!-- <div class="d-flex justify-content-center mb-3 animate__animated animate__fadeInUp animate__fast">
+    <input class="form-control" type="search" placeholder="Cari Kuis..." aria-label="Search"
+        style="width: 622px; max-width: 90%;">
+</div> -->
+<div class="d-flex justify-content-center">
+    <div class="d-flex flex-column isi-list" style="width: 622px; max-width: 90%; height: 510px">
+
+    </div>
+</div>
+{% endblock %}

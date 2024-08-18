@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+* {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+}
+
+.error-code {
+    font-size: 18px; 
+    border-right: 1px solid rgba(203,213,224,1); 
+    color:rgba(160, 174, 192, 1); 
+    letter-spacing: .05em;
+}
+
+.error-msg {
+    font-size: 18px; 
+    color:rgba(160, 174, 192, 1); 
+    letter-spacing: .05em;
+}

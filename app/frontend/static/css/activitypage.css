@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+.swal2-container.swal2-top-end {
+    top: 50px !important;
+}
+
+button.play-quiz::before {
+    font: var(--fa-font-solid);
+    content: "\f11b";
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+button.edit-quiz::before {
+    font: var(--fa-font-solid);
+    content: "\f304";
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+button.delete-quiz::before {
+    font: var(--fa-font-solid);
+    content: "\f1f8";
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+small.total-question::before {
+    font: var(--fa-font-solid);
+    content: "\f03a";
+    display: inline-block;
+    margin-right: .5rem;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+small.total-play-quiz::before {
+    font: var(--fa-font-solid);
+    content: "\f04b";
+    display: inline-block;
+    margin-right: .5rem;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+.active>.page-link, .page-link.active {
+    z-index: 3;
+    color: var(--bs-pagination-active-color);
+    background-color: #273656;
+    border-color: #273656;
+}

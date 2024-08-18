@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- BOOTSTRAP CSS & JS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+    </script>
+    <!-- FONT AWESOME ICON -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- SWEET ALERT -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- MY CSS -->
+    <link rel="stylesheet" href="/static/css/login.css">
+    <script defer src="/static/js/login.js"></script>
+    <title>Petra Quiz</title>
+</head>
+
+<body class="bg-light">
+    <section class="login d-flex">
+        <div class="login-left w-50 h-100">
+            <div class="row justify-content-center align-items-center h-100">
+                <div class="col-6">
+                    <div class="header">
+                        <h1>Welcome Back</h1>
+                        <p>Welcome back! Please enter your details.</p>
+                    </div>
+
+
+                    <form class="login-form">
+                        <label for="nrp" class="form-label">Username</label>
+                        <input type="text" class="form-control" id="nrp" placeholder="NRP">
+
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="Password">
+
+                        <a href="#" class="text-decoration-none">Forgot Password</a>
+
+                        <button type="submit" class="signin">Sign in</button>
+                        <div class="text-center">
+                            <span class="d-inline">Don't have an account? <a href="#"
+                                    class="d-inline text-decoration-none">Sign up</a></span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+        <div class="login-right w-50 h-100">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/static/img/image 1.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Learn and Study</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/static/img/image 2.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Convenient Place</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/static/img/image 3.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Get the future</h5>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+</body>

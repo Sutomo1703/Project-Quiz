@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- BOOTSTRAP CSS & JS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FONT AWESOME ICON -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- MY SCRIPT -->
+    <script defer src="/static/js/play_quiz.js"></script>
+    <!-- MY CSS -->
+    <link rel="stylesheet" href="/static/css/playquiz.css">
+    <title>Petra Quiz</title>
+</head>
+
+<body data-{{ quiz_id }} data-{{ current_user.id }}>
+    <div class="start_btn">
+        <button>Start Quiz</button>
+    </div>
+</body>
+
+</html>

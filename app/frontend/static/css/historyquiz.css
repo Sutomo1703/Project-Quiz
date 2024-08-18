@@ -1,0 +1,44 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap'); */
+
+.card {
+    cursor: pointer;
+}
+
+.card:hover, .card:active {
+    background-color: #d3d4d5;
+    border-color: #273656;
+}
+
+small.date-play-quiz::before {
+    font: var(--fa-font-regular);
+    content: "\f017";
+    display: inline-block;
+    margin-right: 8px;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+small.score::before {
+    font: var(--fa-font-solid);
+    content: "\f140";
+    display: inline-block;
+    margin-right: 8px;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+small.total-question::before {
+    font: var(--fa-font-regular);
+    content: "\f059";
+    display: inline-block;
+    margin-right: 8px;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+.active>.page-link, .page-link.active {
+    z-index: 3;
+    color: var(--bs-pagination-active-color);
+    background-color: #273656;
+    border-color: #273656;
+}

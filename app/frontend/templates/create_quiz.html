@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- BOOTSTRAP CSS & JS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+    </script>
+    <!-- FONT AWESOME ICON -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- SWEET ALERT -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- ANIMATE CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- MY SCRIPT -->
+    <script defer src="/static/js/create_quiz.js"></script>
+    <!-- MY CSS -->
+    <link rel="stylesheet" href="/static/css/createquiz.css">
+    <title>Petra Quiz</title>
+</head>
+
+<body class="bg-light">
+    <div class="fixed-top">
+        <nav class="navbar navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bolder">Petra Quiz</a>
+                <div class="d-flex">
+                    <button id="back" class="btn fw-bolder btn-outline-light">
+                        <span>Kembali</span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <div class="d-flex justify-content-center">
+            <div class="bg-white rounded-bottom p-2 shadow-sm" style="max-width: 700px; width: 100%;">
+                <div class="d-flex flex-row justify-content-between">
+                    <button class="btn btn-sm btn-bg-7b9ee988 fw-semibold" id="edit-quiz-title" data-bs-toggle="tooltip"
+                        data-bs-trigger="hover" data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                        title="Sunting judul quiz ini" data-{{ quiz_id }}>
+                        <span id="quiz-title-text" class="d-inline-block align-middle text-truncate"></span>
+                    </button>
+
+                    <button class="btn btn-sm btn-bg-7b9ee988 fw-semibold p-2" id="create-question">
+                        <span>Buat pertanyaan baru</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="main" class="d-flex justify-content-center">
+        <div id="question-list">
+        </div>
+    </div>
+</body>
+
+</html>
